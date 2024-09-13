@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mine</title>
+</head>
+<body>
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Mine Transaction</h1>
+<form method="POST">
+    <input type="text" name="user_address" placeholder="user_address">
+    <input type="submit">
+</form>
+ {% endblock %}
+
+
+</body>
+</html>

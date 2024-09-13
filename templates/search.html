@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Asset Information</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #f4f4f9;
+				color: #333;
+				padding: 20px;
+			}
+			h1 {
+				color: #2c3e50;
+			}
+			.asset-container {
+				background-color: #fff;
+				padding: 20px;
+				border-radius: 10px;
+				box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+				margin-bottom: 20px;
+			}
+			.asset-container div {
+				margin-bottom: 10px;
+			}
+			.label {
+				font-weight: bold;
+				color: #34495e;
+			}
+			.value {
+				color: #2980b9;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Asset Details</h1>
+		<div class="asset-container">
+			<div><span class="label">ID:</span> <span class="value">{{asset.id}}</span></div>
+			<div><span class="label">Owner:</span> <span class="value">{{asset.owner}}</span></div>
+			<div><span class="label">Investment Name:</span> <span class="value">{{asset.investment_name}}</span></div>
+			<div><span class="label">Quantity:</span> <span class="value">{{asset.quantity}}</span></div>
+			<div><span class="label">Market Cap:</span> <span class="value">{{asset.market_cap}}</span></div>
+			<div><span class="label">Change Value:</span> <span class="value">{{asset.change_value}}</span></div>
+			<div><span class="label">Starting Price:</span> <span class="value">{{asset.starting_price}}</span></div>
+			<div><span class="label">Market Price:</span> <span class="value">{{asset.market_price}}</span></div>
+			<div><span class="label">Coins Value:</span> <span class="value">{{asset.coins_value}}</span></div>
+			<div><span class="label">Investors:</span> <span class="value">{{asset.investors}}</span></div>
+			<div><span class="label">Receipt:</span> <span class="value">{{asset.receipt}}</span></div>
+			<div><span class="label">Tokenized Price:</span> <span class="value">{{asset.tokenized_price}}</span></div>
+		</div>
+	</body>
+</html>

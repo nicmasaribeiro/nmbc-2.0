@@ -1,0 +1,40 @@
+
+
+
+
+{% extends "base.html" %}
+
+{% block title %}Implied Volatility Model{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<h1>IV Options</h1>
+<div class="container">
+    <form method="POST">
+    
+    <label for="market">Option Market Price:</label><br>
+    <input type="text" id="market" name="market" class="input-field"><br><br>
+    
+    <label for="ticker">Stock Market Price:</label><br>
+    <input type="text" id="S" name="S" class="input-field"><br><br>
+
+    <label for="K">Strike Price (K):</label><br>
+    <input type="text" id="K" name="K" class="input-field"><br><br>
+
+    <label for="T">Time to Maturity (T in years):</label><br>
+    <input type="text" id="T" name="T" class="input-field"><br><br>
+
+    <label for="r">Risk-Free Rate (r):</label><br>
+    <input type="text" id="r" name="r" class="input-field"><br><br>
+
+    <label for="option_type">Option Type:</label><br>
+    <select id="option_type" name="option_type" class="input-field">
+        <option value="call">Call</option>
+        <option value="put">Put</option>
+    </select><br><br>
+
+    <input type="submit" value="Calculate" class="submit-button">
+</form>
+</div>
+
+{% endblock %}

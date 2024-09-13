@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Track Transactions</title>
+	</head>
+	<body>
+		{% extends "base.html" %}
+		{% block content %}
+		<style>
+			.head{
+				text-align: center;
+			}
+			.head:hover{
+				color: green;
+			}
+		</style>
+		<br>
+		
+		<div class="head"><h1>Track Transactions</h1></div>
+		
+		<hr><br>
+		
+		<div class="container">
+		<form method="POST">
+			<input type="text" name="username" placeholder="enter your personal token">
+			<input type="submit">
+		</form>
+		<hr><br>
+		<h3><a href="/html/my/transactions">View HTML</a></h3>
+		</div>
+		{% endblock %}
+	</body>
+</html>

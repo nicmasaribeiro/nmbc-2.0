@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}Options Pricing Model{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<div class="container">
+    <h1>Buy Options</h1>
+    <form method="POST" class="form-grid">
+        
+        <div class="form-group">
+            <label for="receipt">Asset Receipt:</label>
+            <input type="text" id="receipt" name="receipt" class="input-field" placeholder="Enter asset receipt" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" class="input-field" placeholder="Enter your username" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" class="input-field" placeholder="Enter your password" required>
+        </div>
+
+        <div class="form-group">
+            <label for="ticker">Asset Ticker:</label>
+            <input type="text" id="ticker" name="ticker" class="input-field" placeholder="e.g. AAPL" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="K">Strike Price (K):</label>
+            <input type="text" id="K" name="K" class="input-field" placeholder="Enter strike price" required>
+        </div>
+
+        <div class="form-group">
+            <label for="T">Time to Maturity (T in years):</label>
+            <input type="text" id="T" name="T" class="input-field" placeholder="Enter time to maturity" required>
+        </div>
+
+        <div class="form-group">
+            <label for="stake">Staked Tokens (ST):</label>
+            <input type="text" id="stake" name="stake" class="input-field" placeholder="Enter staked tokens" required>
+        </div>
+
+        <div class="form-group">
+            <label for="type">Option Type (OT):</label>
+            <input type="text" id="option" name="option" class="input-field" placeholder="CALL or PUT" required>
+        </div>
+
+        <div class="form-group form-submit">
+            <input type="submit" value="Buy" class="submit-button">
+        </div>
+    </form>
+</div>
+{% endblock %}

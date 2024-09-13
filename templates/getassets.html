@@ -1,0 +1,62 @@
+
+
+{% extends "base.html" %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 20px;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    li {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+    }
+    li:last-child {
+        border-bottom: none;
+    }
+    h2 {
+        color: #333;
+        text-align: center;
+    }
+</style>
+{% block content %}
+{% for i in ls %}
+ls = [{'id': t.id,'name': str(t.investment_name),
+#     'owner':t.owner,
+#     'investors_num':t.investors,
+#     'market_cap':str(t.market_cap),
+#     'coins_value':str(t.coins_value),
+#     'receipt':str(t.receipt),
+#     'tokenized_price':str(t.tokenized_price),
+#     'market_price':t.market_price,
+#     'change':t.change_value,
+#     'original_price':t.starting_price,
+#     'ls':t.ls} for t in investemnts]
+    <ul>
+        <li><strong>ID:</strong> {{i.id}}</li>
+        <li><strong>Owner:</strong> {{i.owner}}</li>
+        <li><strong>Investors:</strong> {{i.investors}}</li>
+        <li><strong>Investment Name:</strong> {{i.investment_name}}</li>
+        <li><strong>Number of Shares Staked:</strong> {{i.quantity}}</li>
+        <li><strong>Marketcap:</strong> {{i.market_cap}}</li>
+        <li><strong>Change Value:</strong> {{i.change_value}}</li>
+        <li><strong>Starting Price:</strong> {{i.starting_price}}</li>
+        <li><strong>Market Price:</strong> {{i.market_price}}</li>
+        <li><strong>Staked Coins Amount:</strong> {{i.coins_value}}</li>
+        <li><strong>Number of Investors:</strong> {{i.investors}}</li>
+        <li><strong>Receipt:</strong> {{i.receipt}}</li>
+        <li><strong>Tokenized Price:</strong> {{i.tokenized_price}}</li>
+    </ul>
+    {% endfor %}
+
+{% endblock %}
