@@ -1,0 +1,21 @@
+<investment>
+	<data>
+	<index>0</index>
+	<receipt>0asd0fea0wfe0</receipt>
+	<previous_hash>nonce</previous_hash>
+	<timestamp>0.0.0.0</timestamp>
+	<owner>nmr</owner>
+	<number_investors>1</number_investors>
+	<marketcap>100</marketcap>
+	<market_price>4</market_price>
+	<name>ADA-USD</name>
+	<original_price>10</original_price>
+	<tokenized_price>43</tokenized_price>
+	<ls>
+		<address>84cc082dfa4f2346ae97</address>
+		<amount>20</amount>
+		<name>nmr</name>
+		<receipt>a472e9995069ab359cbc</receipt>
+	</ls>
+	<transaction><index>2</index><receipt>csfw4ver23g3</receipt><previous_hash>2178515843827532735</previous_hash><timestamp>2024-1-1</timestamp><owner>gzago</owner><number_investors>1</number_investors><marketcap>100</marketcap><market_price>4</market_price><tokenized_price>1.2</tokenized_price><ls><address>84cc082dfa4f2346ae97</address><amount>20</amount><currency>coins</currency><name>nmr</name><receipt>a472e9995069ab359cbc</receipt></ls></transaction></data>
+</investment>
